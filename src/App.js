@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Form from "./Form";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+      <body className="body">
+        
+    <Form />
+
+    <div className="currencyBox">
+        <p className="currencyBox__rate">kurs dolara:4,3063</p>
+        <p className="currencyBox__rate">kurs funta:5,6041</p>
+        <p className="currencyBox__rate">kurs euro: 4,6768</p>
+    </div> *kurs walut na dzień 12.04.2022
+
+</body>
     </div>
   );
 }

@@ -1,0 +1,25 @@
+.converter {
+    padding: 15px 25px;
+    color: #000000;
+    background-color: teal;
+    border-radius: 9px;
+    box-shadow: -4.5px -3.5px 7px 1px #022b42;
+
+}
+
+.converter__fieldset {
+    background-color: white;
+}
+
+.converter__title {
+    background-color: white;
+
+    padding: 10px;
+    border-radius: 9px;
+    box-shadow: -4.5px -3.5px 7px 1px #022b42;
+    text-align: center;
+}
+
+.converter__buttonContainer {
+    text-align: center;
+}
