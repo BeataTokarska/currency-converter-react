@@ -1,22 +1,34 @@
-import React from "react";
-import Form from "./Form";
+import React, { useState } from "react";
+import "./App.css";
+import { Form } from "./Form";
+import { currencies } from "./currencies";
 
 function App() {
-  return (
-    <div >
-      <body className="body">
-        
-    <Form />
+    const [result, setResult] = useState();
 
-    <div className="currencyBox">
-        <p className="currencyBox__rate">kurs dolara:4,3063</p>
-        <p className="currencyBox__rate">kurs funta:5,6041</p>
-        <p className="currencyBox__rate">kurs euro: 4,6768</p>
-    </div> *kurs walut na dzień 12.04.2022
+    const calculateResult = (currency, amount) => {
+        const rate = currencies
+            .find(({ short }) => short === currency)
+            .rate;
 
-</body>
-    </div>
-  );
+        setResult({
+            sourceAmount: +amount,
+            targetAmount: amount / rate,
+            currency,
+        });
+    }
+
+
+    return (
+        <body className="body">
+            <div className="app">
+                <Form
+                    result={result}
+                    calculateResult={calculateResult}
+                />
+            </div>
+        </body>
+    );
 }
 
 export default App;
