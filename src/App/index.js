@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 import { Form } from "./Form";
 import { currencies } from "./currencies";
+import Rates from "./Rates";
 
 function App() {
     const [result, setResult] = useState();
@@ -27,13 +28,11 @@ function App() {
                     calculateResult={calculateResult}
                 />
             </div>
-            <div className="currencyBox">
-                <p className="currencyBox__rate">kurs dolara:4,3063</p>
-                <p className="currencyBox__rate">kurs funta:5,6041</p>
-                <p className="currencyBox__rate">kurs euro: 4,6768</p>
-
-
+            <div>
+                <Rates />
             </div>
+
+
             <p>*kurs walut na dzień 12.04.2022</p>
         </body>
     );
