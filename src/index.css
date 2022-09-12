@@ -10,11 +10,11 @@ html {
   padding: 50px 25px;
   max-width: 900px;
   margin: auto;
-  background-image: url("money2.jpg");
-  background-size: 150px 150px;
+  /* background-image: url("money2.jpg"); */
+  /* background-size: 150px 150px; */
   /* background-position: left 50% bottom -40%; */
-  background-repeat: repeat-x;
-  resize: both;
-  overflow: auto;
+  /* background-repeat: repeat-x; */
+  /* resize: both; */
+  /* overflow: auto; */
   font-family: 'Montserrat', sans-serif;
 }

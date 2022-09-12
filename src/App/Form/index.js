@@ -15,7 +15,9 @@ export const Form = ({ calculateResult, result }) => {
     return (
         <form className="converter" onSubmit={onSubmit}>
             <fieldset className="converter__fieldset">
-                <legend className="converter__title">Prosty przelicznik walut</legend>
+                <legend className="converter__title">
+                    Prosty przelicznik walut
+                    </legend>
 
                 <p>
                     <label>
@@ -66,13 +68,6 @@ export const Form = ({ calculateResult, result }) => {
             <p>Otrzymana wartość: <strong>
             <Result result={result} /></strong></p>
             
-            <div className="currencyBox">
-                <p className="currencyBox__rate">kurs dolara:4,3063</p>
-                <p className="currencyBox__rate">kurs funta:5,6041</p>
-                <p className="currencyBox__rate">kurs euro: 4,6768</p>
-            </div>
-            
-            <p>*kurs walut na dzień 12.04.2022</p>
         </form >
     )
 };
