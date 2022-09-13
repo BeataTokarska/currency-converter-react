@@ -3,7 +3,7 @@ import "./style.css";
 import { currencies } from "../currencies";
 import { Result } from "./Result";
 
-export const Form = ({ calculateResult, result }) => {
+export const Form = ({ calculateResult, result, setResult }) => {
     const [currency, setCurrency] = useState(currencies[0].short);
     const [amount, setAmount] = useState("");
 
@@ -62,8 +62,8 @@ export const Form = ({ calculateResult, result }) => {
                 </p>
             </fieldset>
             <p className="converter__buttonContainer">
-                <button>Przelicz!</button>
-                <button type="reset">Wyczyść</button>
+                <button>Przelicz</button>
+                <button type="reset" onClick={() => setResult('')}>Wyczyść</button>
             </p>
             <p>Otrzymana wartość: <strong>
                 <Result result={result} /></strong></p>
