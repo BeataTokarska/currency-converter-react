@@ -1,7 +1,7 @@
 # Simple currency converter
 # [Go to website ](https://beatatokarska.github.io/currency-converter-react/ )
 
-![]("https://raw.githubusercontent.com/BeataTokarska/currency-converter-react/42a74f9345101c9218fdf45863d03eb41bb51986/public/converter2.png")
+![](public/converter2.png)
 
 
 ## With this app you can convert PLN to:
