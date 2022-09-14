@@ -26,7 +26,6 @@ function App() {
                 <Form
                     result={result}
                     calculateResult={calculateResult}
-                    setResult={setResult}
                 />
             </div>
             <div>

@@ -12,8 +12,14 @@ export const Form = ({ calculateResult, result, setResult }) => {
         calculateResult(currency, amount);
     }
 
+        const onReset = () => {
+            setResult('');
+            setAmount('');
+        }
+    
+
     return (
-        <form className="converter" onSubmit={onSubmit}>
+        <form className="converter" onSubmit={onSubmit} onReset={onReset}>
             <fieldset className="converter__fieldset">
                 <legend className="converter__title">
                     Prosty przelicznik walut
@@ -63,7 +69,7 @@ export const Form = ({ calculateResult, result, setResult }) => {
             </fieldset>
             <p className="converter__buttonContainer">
                 <button>Przelicz</button>
-                <button type="reset" onClick={() => setResult('')}>Wyczyść</button>
+                <button type="reset">Wyczyść</button>
             </p>
             <p>Otrzymana wartość: <strong>
                 <Result result={result} /></strong></p>
