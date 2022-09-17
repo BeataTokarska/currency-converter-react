@@ -19,7 +19,8 @@ export const Form = ({ calculateResult, result, setResult }) => {
     
 
     return (
-        <form className="converter" onSubmit={onSubmit} onReset={onReset}>
+        <form  className="converter" 
+         onSubmit={onSubmit} onReset={onReset}>
             <fieldset className="converter__fieldset">
                 <legend className="converter__title">
                     Prosty przelicznik walut

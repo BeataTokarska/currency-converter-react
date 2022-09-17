@@ -10,11 +10,21 @@ html {
   padding: 50px 25px;
   max-width: 900px;
   margin: auto;
+  
   /* background-image: url("money2.jpg");
   background-size: 150px 150px;
   background-position: left 100% bottom 0%;
   background-repeat: repeat-x; */
+  /* height: 1000px;
+  width: 1000px; */
   resize: both;
   overflow: auto;
   font-family: 'Montserrat', sans-serif;
+}
+#root {
+  background-image: url("desertImage.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  
 }
