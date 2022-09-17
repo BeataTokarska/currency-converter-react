@@ -12,15 +12,14 @@ export const Form = ({ calculateResult, result, setResult }) => {
         calculateResult(currency, amount);
     }
 
-        const onReset = () => {
-            setResult('');
-            setAmount('');
-        }
-    
+    const onReset = () => {
+        setResult('');
+        setAmount('');
+    }
 
     return (
-        <form  className="converter" 
-         onSubmit={onSubmit} onReset={onReset}>
+        <form className="converter"
+            onSubmit={onSubmit} onReset={onReset}>
             <fieldset className="converter__fieldset">
                 <legend className="converter__title">
                     Prosty przelicznik walut
@@ -37,12 +36,8 @@ export const Form = ({ calculateResult, result, setResult }) => {
                             onChange={({ target }) => setCurrency(target.value)}
                         >
                             {currencies.map((currency => (
-                                <option
-                                    key={currency.short}
-                                    value={currency.short}
-                                >
+                                <option key={currency.short} value={currency.short}>
                                     {currency.name}
-
                                 </option>
                             )))}
                         </select>
@@ -59,7 +54,6 @@ export const Form = ({ calculateResult, result, setResult }) => {
                             value={amount}
                             onChange={({ target }) => setAmount(target.value)}
                             type="number"
-                            // value="0.00" 
                             name="amountPLN"
                             required
                             min="0.00"
@@ -74,10 +68,8 @@ export const Form = ({ calculateResult, result, setResult }) => {
             </p>
             <p>Otrzymana wartość: <strong>
                 <Result result={result} /></strong></p>
-
         </form >
     )
 };
-
 
 export default Form;

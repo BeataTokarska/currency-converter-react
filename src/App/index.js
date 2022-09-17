@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./App.css";
 import { Form } from "./Form";
 import { currencies } from "./currencies";
 import Rates from "./Rates";
@@ -19,7 +18,6 @@ function App() {
         });
     }
 
-
     return (
         <body className="body">
             <div className="app">
@@ -32,8 +30,6 @@ function App() {
             <div>
                 <Rates />
             </div>
-
-
             <p>*kurs walut na dzień 12.04.2022</p>
         </body>
     );
