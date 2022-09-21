@@ -27,9 +27,7 @@ function App() {
                     setResult={setResult}
                 />
             </div>
-            <div>
-                <Rates />
-            </div>
+            <Rates />
             <p>*kurs walut na dzień 12.04.2022</p>
         </body>
     );
