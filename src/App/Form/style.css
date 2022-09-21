@@ -10,6 +10,10 @@
     background-color: white;
 }
 
+.converter__option {
+    margin: 0px 8px 0px 0px;
+}
+
 .converter__title {
     background-color: white;
     padding: 10px;
@@ -20,6 +24,11 @@
 
 .converter__buttonContainer {
     text-align: center;
+    /* margin: 50px; */
     
+}
+
+.conventer__button {
+    margin: 05px 15px;
 }
 

@@ -27,7 +27,7 @@ export const Form = ({ calculateResult, result, setResult }) => {
 
                 <p>
                     <label>
-                        <span>
+                        <span className="converter__option">
                             Wybierz walutę:
                         </span>
 
@@ -46,7 +46,7 @@ export const Form = ({ calculateResult, result, setResult }) => {
 
                 <p>
                     <label>
-                        <span>
+                        <span className="converter__option">
                             wpisz kwotę w zł:
                         </span>
 
@@ -63,8 +63,8 @@ export const Form = ({ calculateResult, result, setResult }) => {
                 </p>
             </fieldset>
             <p className="converter__buttonContainer">
-                <button>Przelicz</button>
-                <button type="reset">Wyczyść</button>
+                <button className="conventer__button">Przelicz</button>
+                <button type="reset" className="conventer__button">Wyczyść</button>
             </p>
             <p>Otrzymana wartość: <strong>
                 <Result result={result} /></strong></p>
